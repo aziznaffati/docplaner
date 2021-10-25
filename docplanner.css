@@ -1,0 +1,579 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap");
+
+.nav-bar {
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  color: #ababab;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: hsla(0, 0%, 100%, 0.98);
+  transition: box-shadow 0.25s ease 0s;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+  width: 20%;
+  list-style: none;
+}
+ul :hover {
+  color: #00b39b;
+}
+
+.Docplaner-Logo {
+  width: 268px;
+  height: 33px;
+  margin: 15x 10px;
+  padding: 10px;
+}
+
+#Aboutus {
+  color: #00b39b;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 12px 16px;
+  position: absolute;
+  margin-left: -100px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  z-index: 1;
+  list-style-type: disc;
+  min-width: 160px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #ababab;
+  line-height: 120%;
+  padding: 12px 16px !important;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #00b39b;
+}
+
+.dropdown:hover .dropdown-content a:hover {
+  background-color: #f6f8f8;
+}
+
+.intrologo {
+  display: block;
+  margin: 7% auto 0 auto;
+}
+
+.firstcontainer {
+  color: #ababab;
+  display: flex;
+  flex-direction: row;
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-bottom: 5%;
+}
+.firstcontainer p {
+  font-weight: 700;
+  font-family: "Roboto", Arial, sans-serif;
+  color: gray;
+  text-align: justify;
+  font-size: medium;
+}
+
+#pindent {
+  margin-right: 5%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.3px;
+  color: #02ccb1;
+  font-size: x-large;
+  font-weight: lighter;
+}
+
+/*another flex container for the 3 boxes*/
+.secondcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+/*the 3 boxes style*/
+.secondcontainer div {
+  width: 100%;
+  border-radius: 3%;
+  height: 300px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 4%;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: x-large;
+  text-align: left;
+}
+/*space between boxes*/
+.divindent {
+  margin-right: 2%;
+}
+/*box 1 color*/
+.turq {
+  background-color: #00ccb1;
+}
+/*box 2 color*/
+.blue {
+  background-color: #3d83df;
+}
+/*box 3 color*/
+.black {
+  background-color: #1b2734;
+}
+/*box 1 hover color*/
+.turq:hover {
+  background-color: #00ccb1;
+}
+/*box 2 hover color*/
+.blue:hover {
+  background-color: #3d83df;
+}
+/*box 3 hover color*/
+.black:hover {
+  background-color: #1b2734;
+}
+/*button style for box 1 & box 2*/
+.countries {
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+/*button style for box 3*/
+.specialists {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 2em 0 0;
+  -webkit-appearance: none;
+  outline: 0;
+  text-transform: none;
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+
+h2 {
+  float: left;
+  width: 33%;
+  font-size: 1.625em;
+  margin: 0.25em 0 0.35em;
+  padding-right: 1em;
+  color: #00b39b;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 200;
+}
+
+.Brand-section {
+  padding: 30px 10px;
+  text-align: justify;
+  margin: 1.25em 150px 1.35em;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  font-size: 0;
+  width: 60%;
+  list-style: none;
+}
+
+.brands li {
+  font-size: 1rem;
+  display: inline-block;
+  width: 160px;
+  padding: 5px 0;
+}
+
+.brand-table li:hover svg {
+  fill: #00b39b;
+}
+
+.brands li a svg {
+  height: 20px;
+  width: auto;
+  max-width: 100%;
+  padding-left: 10px;
+  fill: #ababab;
+}
+
+#tuotempo {
+  width: 175px;
+}
+
+#gipo {
+  width: 85px;
+}
+
+#clinic {
+  width: 90px;
+}
+
+#gipo img,
+#clinic img,
+#tuotempo img {
+  filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%)
+    contrast(0);
+  opacity: 0.55;
+  padding-left: 4%;
+}
+
+#gipo img:hover,
+#clinic img:hover,
+#tuotempo img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.logo-paragraph {
+  display: inline-block;
+  height: 610px;
+  width: 100%;
+  overflow: hidden;
+  background: #e5faf8;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(0, 204, 177, 0.01) 5%,
+    rgba(61, 199, 223, 0.1)
+  );
+  padding: 1.875em 0 0.625em;
+  overflow: hidden;
+  margin: 3.125rem auto 5.5rem;
+}
+.logo-paragraph img {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+.logo-paragraph p:first-of-type {
+  font-size: xx-large;
+  color: #00b39b;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15%;
+  padding-top: 2%;
+}
+.logo-paragraph p:nth-of-type(2) {
+  font-size: large;
+  color: grey;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15%;
+}
+
+.Stat-Boxes {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 3;
+  position: absolute;
+  top: 155%;
+  left: 60%;
+  gap: 20px 20px;
+}
+.Stat-Boxes div {
+  background-color: white;
+  height: 260px;
+  width: 240px;
+  margin-right: 80%;
+  border-radius: 5%;
+}
+.Stat-Boxes div:nth-of-type(1),
+.Stat-Boxes div:nth-of-type(3) {
+  grid-column: 1/2;
+}
+.Stat-Boxes div:nth-of-type(2),
+.Stat-Boxes div:nth-of-type(4) {
+  grid-column: 2/3;
+}
+.Stat-Boxes div:nth-of-type(1),
+.Stat-Boxes div:nth-of-type(2) {
+  grid-row: 1/2;
+}
+.Stat-Boxes div:nth-of-type(3),
+.Stat-Boxes div:nth-of-type(4) {
+  grid-row: 2/3;
+}
+.Stat-Boxes div figure figcaption {
+  font-size: large;
+  color: #00b39b;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 16%;
+}
+.Stat-Boxes div figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.firstp {
+  font-size: small;
+  color: grey;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 600;
+}
+.secondp {
+  font-size: large;
+  color: grey;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+/*header style & position for the last section*/
+.lastsection h1 {
+  font-weight: 300;
+  margin-top: -15px;
+  text-align: center;
+  font-size: xx-large;
+  color: #03b49d;
+  font-family: "Roboto", sans-serif;
+}
+/*paragraph style & position under the header*/
+.lastsection p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  color: #747474;
+  font-weight: 600;
+}
+/*4x4 grid style & position for 9 items ( 2 blank ) */
+.places {
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: 4;
+  justify-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+/*grid boxes style*/
+.places div {
+  height: 350px;
+  width: 100%;
+  padding-top: 5%;
+}
+/*img caption position & style inside each box*/
+.places div figure figcaption {
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+  color: #747474;
+  font-weight: bold;
+}
+/*button position & style inside each box*/
+.places div span {
+  display: inline-block;
+  position: absolute;
+  background-color: #03b49d;
+  color: white;
+  margin-top: 0%;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+}
+/*caption positions*/
+.fg1 {
+  left: 9%;
+  top: 319%;
+}
+
+.fg2 {
+  left: 39%;
+
+  top: 319%;
+}
+
+.fg3 {
+  top: 319%;
+  left: 69%;
+}
+
+.fg4 {
+  top: 371%;
+  left: 9%;
+}
+.fg5 {
+  top: 371%;
+  left: 39%;
+}
+.fg6 {
+  top: 371%;
+  left: 69%;
+}
+
+.fg7 {
+  top: 422%;
+  left: 9%;
+}
+/*buttons positions*/
+.sp1 {
+  top: 319%;
+  left: 335px;
+}
+.sp2 {
+  top: 319%;
+  left: 785px;
+}
+.sp3 {
+  top: 319%;
+  left: 1235px;
+}
+.sp4 {
+  top: 371%;
+  left: 335px;
+}
+.sp5 {
+  top: 371%;
+  left: 785px;
+}
+.sp6 {
+  top: 371%;
+  left: 1235px;
+}
+
+.sp7 {
+  top: 422%;
+  left: 335px;
+}
+.places div span a {
+  color: white;
+  text-decoration: none;
+}
+.places div span:hover {
+  background-color: #03b49d;
+  box-shadow: 2px 2px white;
+}
+.places div figure img {
+  display: block;
+  padding-bottom: 14%;
+  border-radius: 15px;
+}
+.places div figure img:hover {
+  box-shadow: 0px 3px 20px #747474;
+}
+.places div:nth-of-type(1),
+.places div:nth-of-type(4) {
+  grid-column: 1/2;
+}
+.places div:nth-of-type(2),
+.places div:nth-of-type(5) {
+  grid-column: 2/3;
+}
+.places div:nth-of-type(3),
+.places div:nth-of-type(6) {
+  grid-column: 3/4;
+}
+.places div:nth-of-type(1),
+.places div:nth-of-type(2),
+.places div:nth-of-type(3) {
+  grid-row: 1/2;
+}
+.places div:nth-of-type(4),
+.places div:nth-of-type(5),
+.places div:nth-of-type(6) {
+  grid-row: 2/3;
+}
+.places div:nth-of-type(7) {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+footer {
+  background-color: white;
+}
+footer p:first-of-type {
+  padding-top: 3%;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(158, 150, 150);
+  font-family: "Roboto", sans-serif;
+}
+footer span {
+  background-color: #03b49d;
+  color: white;
+  padding: 1% 1% 1% 1%;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+footer span a {
+  color: white;
+  text-decoration: none;
+}
+footer span:hover {
+  box-shadow: 2px 2px white;
+}
+footer p:nth-of-type(2) {
+  text-align: center;
+  font-size: small;
+  font-family: "Roboto", sans-serif;
+  padding-top: 2%;
+  color: rgb(158, 150, 150);
+}
+footer p:nth-of-type(2) a {
+  text-decoration: none;
+  color: #03b49d;
+}
+footer p:nth-of-type(2) a:hover {
+  text-decoration: underline;
+}
+footer p:nth-of-type(3) {
+  text-align: center;
+  font-size: small;
+  font-family: "Roboto", sans-serif;
+  color: rgb(158, 150, 150);
+}
+
+::-moz-selection {
+  color: white;
+  background: #03b49d;
+}
+
+::selection {
+  color: white;
+  background: #03b49d;
+}
